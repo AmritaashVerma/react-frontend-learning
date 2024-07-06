@@ -1,14 +1,19 @@
 import './App.css'
-
+import {useState} from 'react';
 
 function App() {
-   return(
-    <div className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
-   <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </div>
+  function Counter() { 
+    const [score, setlike] = useState(0);
+
+  function handleclick() {
+    setlike(score + 1);
+  } 
+   return (
+  <h1>
+    This is some sample text
+  </h1>
    )
+  }
 }
 
-export default App
+export default App;
